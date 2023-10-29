@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+
+
+
+    <style>
+        @font-face {
+            font-family: 'hermit';
+            src: url(Hermit-Regular.otf);
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'hermit';
+        }
+
+        body {
+            background-color: #dddd;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        div#interface {
+            width: 800px;
+            height: 1350px;
+            background-color: #1A3E92;
+            margin: -20px auto -20px auto;
+            box-shadow: 0px 0px 10px black;
+            padding: 10px 10px 10px 10px;
+        }
+
+        h1#tit {
+            text-align: start;
+            color: #ffffff;
+            margin-top: 10px;
+            font-size: 35pt;
+            font-family: 'hermit';
+            text-shadow: 2px 2px black;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        h1#tit:hover {
+            color: #F5AF00;
+        }
+
+
+        h2#sub {
+            color: #fff;
+            text-align: center;
+            border-bottom: 5px solid#DBA811;
+            border-bottom-left-radius: 300px;
+            border-bottom-right-radius: 10px;
+            line-height: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        h2#sub:hover {
+            color: #4C6CB6;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 20vh 20vh 20vh 20vh 60vh 20vh;
+            grid-template-areas:
+                "aside header"
+                "aside res"
+                "aside cont"
+                "aside esc"
+                "aside hab"
+                "aside cur";
+            align-content:space-around;
+            justify-content: center;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        div#res {
+            grid-area: res;
+            align-self: flex-start;
+            
+        }
+
+        svg {
+            display: inline-block;
+            height: 3em;
+        }
+
+        div#res p {
+            margin: 40px 0px 20px 0px;
+            border-bottom: 10px solid #DBA811;
+            border-bottom-left-radius: 20px;
+            text-align: justify;
+            font-size: 15pt;
+        }
+
+        p,
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        div#esc {
+            grid-area: esc;
+            align-self: flex-end;
+            border-bottom: 10px solid #DBA811;
+            border-bottom-left-radius: 20px;
+        }
+
+        div#hab {
+            grid-area: hab;
+            margin-bottom: -120px;
+            border-bottom: 10px solid #DBA811;
+            border-bottom-left-radius: 20px;
+
+        }
+
+        div#cont {
+            grid-area: cont;
+            align-self: center;
+            border-bottom: 10px solid #DBA811;
+            border-bottom-left-radius: 20px;
+        }
+
+        div#cursos {
+            grid-area: cur;
+         
+        }
+
+        aside {
+            background-color: #4C6CB6;
+            width: 200px;
+            margin: 3px 10px 0px -10px;
+            height: 1337px;
+            text-align: center;
+
+
+        }
+
+
+        .barra {
+            width: 100%;
+            background-color: #ddd;
+
+        }
+
+        .movebar {
+            width: 85%;
+            height: 30px;
+            background-color: #F67B35;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+
+        }
+
+        .inf {
+            color: #DBA811;
+            border-bottom: 1px solid;
+            margin: 30px 0px 30px 0px;
+            cursor: pointer;
+            transition: 0.5s;
+
+        }
+
+        .inf:hover {
+            background-color: #F5E800;
+            color: #3B00A8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="interface">
+        <div class="container">
+            <header>
+                <h1 id="tit">Victor César</h1>
+                <h2 id="sub">Estudante de Desenvolvimento Web</h2>
+            </header>            
+
+            <div id="res" style="position: relative; top: 20px;">
+
+                <p>Estudante de Desenvolvimento Web há 5 meses.Tenho conhecimento em HTML , CSS , JS e um pouco de
+                    github pretendo estudar ainda esse ano
+                    frameworks de Css e JavaScript e crescer nessa área.</p>
+                <br>
+            </div>
+
+
+            <aside>
+                <h2 style="position: relative; top: 140px;" class="inf">Resumo Pessoal: <br> <img src="https://img.icons8.com/nolan/64/brief.png"/></h2>
+                <h2 style="position: relative; top: 160px;" class="inf">
+                    Contato: <br>
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/cell-phone.png"/></h2>
+                <h2 style="position: relative; top: 180px;" class="inf">Escolaridade: <img src="https://img.icons8.com/emoji/48/000000/graduation-cap-emoji.png"/></h2>
+                <h2 style="position: relative; top: 320px;" class="inf">Habilidades:
+                    <img src="https://img.icons8.com/office/40/000000/ruby-programming-language.png"/></h2>
+                <h2 style="position: relative; top:565px ;" class="inf">Cursos: <br><img src="https://img.icons8.com/dusk/64/000000/course-assign.png"/></h2>
+            </aside>
+
+            <div id="cont" style="position: relative; top: 100px;">
+                <a href="mailto:victorocalheiros@outlook.com" style="font-size: 14pt;">victorocalheiros@outlook.com</a>
+                <p style="font-size: 14pt;">Telefone: (71)98341-8784(vivo)</p>
+            </div>
+
+            <div id="esc" style="position: relative; top: 120px;" >
+                <p style="font-size: 15pt;">Colégio Flamboyants-Salvador,BA</p>
+                <p style="font-size: 15pt;">Cursando o 3° Ano do Ensino Médio</p>
+            </div>
+
+
+            <div id="hab" style="position: relative; top: 160px;">
+
+                <p>Forte:HTML <svg viewBox="-30 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m0 0 31.800781 448.101562 194.398438 63.898438 194.398437-63.898438 31.800782-448.101562zm0 0"
+                            fill="#ff7816" />
+                        <path d="m452.398438 0-31.800782 448.101562-194.398437 63.898438v-512zm0 0" fill="#ff4b00" />
+                        <path
+                            d="m367.5 136h-222.300781l5.398437 75h211.503906l-12.902343 181.597656-123 41.101563-123-41.101563-4.199219-60.597656h60l1.199219 16.5 66 21.898438 66-21.898438 5.398437-77.5h-203.097656l-13.800781-195h291zm0 0"
+                            fill="#ececf1" />
+                        <g fill="#e2e2e7">
+                            <path
+                                d="m362.101562 211-12.902343 181.597656-123 41.101563v-63.300781l66-21.898438 5.398437-77.5h-71.398437v-60zm0 0" />
+                            <path d="m371.699219 76-4.199219 60h-141.300781v-60zm0 0" />
+                        </g>
+                    </svg></p>
+                <div class="barra">
+                    <div class="movebar">85%</div>
+                </div>
+
+                <p>Forte: CSS
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <polygon style="fill:#2196F3;" points="32,0 72.8,460.8 256,512 439.136,460.832 480,0 " />
+                        <polygon style="fill:#FAFAFA;"
+                            points="392.768,150.688 387.616,208.576 372.064,382.112 256,414.208 255.904,414.24 
+                        139.904,382.112 131.808,291.36 188.64,291.36 192.864,338.432 255.936,355.456 255.968,355.424 319.136,338.4 327.744,259.968 
+                        129.088,260.512 123.456,206.88 332.512,204.416 336.736,147.008 117.856,147.616 114.176,94.208 256,94.208 397.824,94.208 " />
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </p>
+                <div class="barra">
+                    <div class="movebar" style="background-color: #2BB9D9; width: 75%;">75%</div>
+                </div>
+                <p>Conhecedor:JS <img src="https://img.icons8.com/color/50/000000/javascript.png"/> </p>
+                <div class="barra">
+                    <div class="movebar" style="background-color: #F7E018; width: 40%;">40%</div>
+                </div>
+            </div>
+            <div id="cursos" style="font-size: 15pt; position: relative; top: 275px;">
+                <p >
+                    Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS] <br>
+                    Curso HTML5 e CSS3: módulo 2 de 5 [40 HORAS](Em andamento) <br>
+                    Curso em Vídeo:HTML5 [40 Horas] <br>
+                    Curso em Vídeo: Javascript [40 Horas]
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
